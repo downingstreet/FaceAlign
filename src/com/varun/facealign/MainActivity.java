@@ -20,9 +20,7 @@ public class MainActivity extends Activity {
 		runButton = (Button) findViewById(R.id.button_run_demo);
 		runButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.v("SIFT DEMO", "start runDemo");
                 NonfreeJNILib.runDemo();
-                
                 Toast.makeText(getApplicationContext(), "Finished! Check /sdcard/nonfree for result image", Toast.LENGTH_SHORT).show();
             }
         });
